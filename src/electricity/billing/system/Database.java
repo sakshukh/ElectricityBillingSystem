@@ -12,7 +12,7 @@ public class Database {
     Database () {
         try {
 //            System.out.println("dbname" + System.getenv("db_username"));
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bill_system", "root", "root@123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:PORT/db_name", "username", "password");
             statement = connection.createStatement();
         }catch (SQLException e) {
             e.printStackTrace();
